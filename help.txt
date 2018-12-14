@@ -1,0 +1,27 @@
+E.coli_Virulence_Finder.sh Usage Guide and gene accession library
+
+E.coli_Virulence_Finder searches for virulence genes in multiple 
+Enteropathogenic E.coli strains simultaneously and BLASTs for sequence identity.
+However, it can easily be expanded to query any accessible gene, against any genome.
+
+Program usable interface is as follows: ./E.coli_Virulence_Finder.sh <Accession number>
+
+Results: Hits in the referenced genomes are listed in rows, with columns for  identifying the genome,
+data on the hit alignment, and the full sequence. The gene's BLAST output, fasta sequence, and results
+file are also downloaded and saved.
+
+Current accessible genes:
+AF286465 = fimA --> Virulence gene: Fimbrial adhesin, associated with Type 1 pili formation; https://www.ncbi.nlm.nih.gov/nuccore/AF286465
+JX847135 = fimH --> Virulence gene: Fimbrial adhesin, associated with Type 1 pili formation; https://www.ncbi.nlm.nih.gov/nuccore/JX847135
+AF042279 = iss --> Virulence gene: Associated with serum survival; https://www.ncbi.nlm.nih.gov/nuccore/AF042279.1
+AF280396 = chuA --> Virulence gene: Outer membrane hemin receptor; https://www.ncbi.nlm.nih.gov/nuccore/AF280396
+FJ158545 = ibeA --> Virulence gene: Invasion protein; https://www.ncbi.nlm.nih.gov/nuccore/FJ158545
+KJ858767 = adk --> Housekeeping gene: Adenosine kinase; https://www.ncbi.nlm.nih.gov/nuccore/KJ858767.1
+EU014669 = mdh --> Housekeeping gene: Malate Dehydrogenase; https://www.ncbi.nlm.nih.gov/nuccore/EU014669.1
+KJ093839 = gipA --> Virulence gene: Peyers patch-specific factor, a putative transposase; https://www.ncbi.nlm.nih.gov/nuccore/KJ093839.1
+
+Current reference genomes:
+Genome    		Tax ID
+E.coli strain LF82	591946
+E.coli strain UTI89	364106
+E.coli strain 536	362663
